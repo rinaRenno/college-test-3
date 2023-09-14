@@ -11,7 +11,7 @@ export default function solution(content) {
     const newLogic = logic.map( (cc) => {
       return cc.trim()
     })
-    return newLogic
+    return newLogic.slice(1, newLogic.length - 1)
   } )
-  console.log(newMash);
+  console.log(newMash); // Шаг 2
 };
