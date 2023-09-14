@@ -24,4 +24,19 @@ export default function solution(content) {
       }
     })).trim()
   console.log(`Plants: ${newPlants}`); // Шаг 2
+
+  let yy = 0
+  let nn = 0
+  newMash.map( (yn) => {
+    if ( yn[4] === 'Да' ) {
+      yy++
+    } else {
+      nn++
+    }
+  })
+
+  console.log(yy, nn);
+  const py = (yy*100)/20
+  const pn = (nn*100)/20
+  console.log(`Безопасные: ${pn}, Опасные: ${py}`); //Шаг 3
 };
